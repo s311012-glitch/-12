@@ -1,0 +1,531 @@
+```html id="japantravelcode"
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Japan Travel 日本旅遊網站</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color:#f8f9fa;
+        }
+
+        .carousel img{
+            height:600px;
+            object-fit:cover;
+        }
+
+        .card img{
+            height:250px;
+            object-fit:cover;
+        }
+
+        footer{
+            margin-top:50px;
+        }
+
+        .hero-text{
+            background:rgba(0,0,0,0.5);
+            padding:20px;
+            border-radius:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            Japan Travel
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        首頁
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#spots">
+                        熱門景點
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#food">
+                        美食推薦
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        聯絡我們
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators"
+     class="carousel slide"
+     data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"></button>
+
+        <button type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"></button>
+
+    </div>
+
+    <div class="carousel-inner">
+
+        <!-- 第一張 -->
+        <div class="carousel-item active">
+
+            <img src="images/japan1.png"
+                 class="d-block w-100">
+
+            <div class="carousel-caption">
+
+                <div class="hero-text">
+
+                    <h1 class="fw-bold">
+                        Japan Travel
+                    </h1>
+
+                    <p>
+                        探索日本著名景點與文化
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 第二張 -->
+        <div class="carousel-item">
+
+            <img src="images/japan2.png"
+                 class="d-block w-100">
+
+            <div class="carousel-caption">
+
+                <div class="hero-text">
+
+                    <h1 class="fw-bold">
+                        日本旅遊
+                    </h1>
+
+                    <p>
+                        體驗日本美食與風景
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 左右按鈕 -->
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+<!-- 景點介紹 -->
+<section class="container py-5" id="spots">
+
+    <h2 class="text-center fw-bold mb-5">
+        日本熱門景點
+    </h2>
+
+    <div class="row justify-content-center">
+
+        <!-- Card 1 -->
+        <div class="col-md-5 mb-4">
+
+            <div class="card shadow">
+
+                <img src="images/japan3.png"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        京都清水寺
+                    </h5>
+
+                    <p class="card-text">
+                        京都最具代表性的傳統寺廟，
+                        擁有濃厚日本文化特色。
+                    </p>
+
+                    <button class="btn btn-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#kyotoModal">
+
+                        查看更多
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-5 mb-4">
+
+            <div class="card shadow">
+
+                <img src="images/japan4.png"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        大阪城
+                    </h5>
+
+                    <p class="card-text">
+                        日本歷史文化的重要景點，
+                        是大阪代表性建築之一。
+                    </p>
+
+                    <button class="btn btn-danger">
+                        查看更多
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Accordion -->
+<section class="container py-5">
+
+    <h2 class="text-center fw-bold mb-4">
+        旅遊常見問題
+    </h2>
+
+    <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+
+                    日本最佳旅遊季節？
+
+                </button>
+
+            </h2>
+
+            <div id="collapseOne"
+                 class="accordion-collapse collapse show">
+
+                <div class="accordion-body">
+                    春季櫻花與秋季楓葉季節最受歡迎。
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+
+                <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+
+                    日本交通方便嗎？
+
+                </button>
+
+            </h2>
+
+            <div id="collapseTwo"
+                 class="accordion-collapse collapse">
+
+                <div class="accordion-body">
+                    日本擁有完善的大眾交通系統，
+                    搭乘地鐵與新幹線非常便利。
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 美食推薦 -->
+<section class="container py-5" id="food">
+
+    <h2 class="text-center fw-bold text-danger mb-5">
+        美食推薦
+    </h2>
+
+    <div class="row text-center justify-content-center">
+
+        <!-- 壽司 -->
+        <div class="col-6 col-md-3 mb-4">
+
+            <img src="images/sushi.png"
+                 class="rounded-circle img-fluid shadow"
+                 style="width:120px;
+                        height:120px;
+                        object-fit:cover;">
+
+            <h5 class="mt-3 fw-bold">
+                壽司
+            </h5>
+
+            <p>Sushi</p>
+
+        </div>
+
+        <!-- 拉麵 -->
+        <div class="col-6 col-md-3 mb-4">
+
+            <img src="images/ramen.png"
+                 class="rounded-circle img-fluid shadow"
+                 style="width:120px;
+                        height:120px;
+                        object-fit:cover;">
+
+            <h5 class="mt-3 fw-bold">
+                拉麵
+            </h5>
+
+            <p>Ramen</p>
+
+        </div>
+
+        <!-- 天婦羅 -->
+        <div class="col-6 col-md-3 mb-4">
+
+            <img src="images/tempura.png"
+                 class="rounded-circle img-fluid shadow"
+                 style="width:120px;
+                        height:120px;
+                        object-fit:cover;">
+
+            <h5 class="mt-3 fw-bold">
+                天婦羅
+            </h5>
+
+            <p>Tempura</p>
+
+        </div>
+
+        <!-- 章魚燒 -->
+        <div class="col-6 col-md-3 mb-4">
+
+            <img src="images/takoyaki.png"
+                 class="rounded-circle img-fluid shadow"
+                 style="width:120px;
+                        height:120px;
+                        object-fit:cover;">
+
+            <h5 class="mt-3 fw-bold">
+                章魚燒
+            </h5>
+
+            <p>Takoyaki</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- 表單 -->
+<section class="container py-5" id="contact">
+
+    <h2 class="text-center fw-bold mb-4">
+        聯絡我們
+    </h2>
+
+    <form>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                姓名
+            </label>
+
+            <input type="text"
+                   class="form-control">
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                Email
+            </label>
+
+            <input type="email"
+                   class="form-control">
+
+        </div>
+
+        <div class="mb-3">
+
+            <label class="form-label">
+                留言內容
+            </label>
+
+            <textarea class="form-control"
+                      rows="5"></textarea>
+
+        </div>
+
+        <button type="submit"
+                class="btn btn-danger">
+
+            送出表單
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="kyotoModal">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    京都清水寺
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                清水寺是日本京都最著名的寺廟之一，
+                擁有悠久歷史與美麗景觀，
+                每年吸引大量觀光客前往參觀。
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                    關閉
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-4">
+
+    <p class="mb-1">
+        學號：311012
+    </p>
+
+    <p class="mb-1">
+        姓名：許宸瑞
+    </p>
+
+    <p class="mb-0">
+        © 2026 Japan Travel All Rights Reserved.
+    </p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
